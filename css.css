@@ -1,3 +1,73 @@
 body{
-    background-color: black;
+    background-color: white;
 }
+.js-3DSlider{
+margin : 100px 2px 20px 20px;
+position : relative;
+}
+.wrap{
+    display: flex;
+    margin-left: 20px;
+   
+    
+}
+.wrap__elem{
+order: 0;
+position : absolute;
+width: 200px;
+height: 300px;
+transition-duration: 5s;;
+opacity: 1;
+
+}
+.mainElement{
+    transform: scale(1.4, 1.4);
+    z-index: 1;
+}
+.img{
+    object-fit:cover;
+    width: 200px;
+    height: 300px;
+}
+
+.arrow{
+    width: 20px;
+    position: absolute;
+    height: 300px;
+    z-index: 1;
+}
+.img--right{
+    margin-left: 620px;
+}
+.arrow:hover{
+    background-color: wheat;
+}
+
+.tooltip {
+    position: absolute;
+    border-bottom: 1px  black;
+    min-width: 1px;
+    max-width: 100px;
+
+}
+.tooltip:hover{
+    background-color:white;
+}
+.tooltip .tooltip__text {
+    visibility: hidden;
+    padding: 6px;
+    background-color: coral;
+    color: #fff;
+    text-align: center;
+    
+    
+    /* Position the tooltip */
+    position: absolute;
+}
+.tooltip:hover{
+    background-color:white;
+}
+.tooltip:hover .tooltip__text {
+    visibility: visible;
+}
+
